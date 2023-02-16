@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $MYFILE -o main 
+gcc -c $MYFILE= main.o 
