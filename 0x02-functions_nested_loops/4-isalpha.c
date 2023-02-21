@@ -6,8 +6,7 @@
  *
  * @c: character to compare
  *
- * Return: 1 if c is a letter, lowercase or uppercase,
- * 0 otherwise
+ * Return: 1 if true, 0 if false
  */
 
 int _isalpha(int c)
