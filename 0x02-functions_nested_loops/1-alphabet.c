@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - print alphabelts in lower cases
+ * print_alphabet - print alphabelts in lower cases
  *
  * Return: 0 (success)
  */
@@ -13,7 +13,7 @@ void print_alphabet(void)
 
 	for (l = 'a'; l <= 'z'; l++)
 	{
-		_putchar('l');
+		_putchar(l);
 	}
 	_putchar('\n');
 }
