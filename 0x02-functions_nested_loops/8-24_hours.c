@@ -3,17 +3,20 @@
 
 /**
  * jack_bauer -  function that prints every minute of the day
- *
+ * starting from 00:00 to 23:59
+ * Description: Using neste while loops,
+ * count up through every minute of the day and print
  * Return: Always 0 (success)
  */
 
 void jack_bauer(void)
 {
-	int hour, minute;
+	int hour = 0, minute;
 
-	for (hour = 0; hour <= 23; hour++)
+	while (hour < 24)
 	{
-		for (minute = 0; minute <= 59; minute++)
+		min = 0;
+		while (min < 60)
 		{
 			_putchar((minute / 10) + '0');
 			_putchar((hour % 10) + '0');
@@ -21,6 +24,8 @@ void jack_bauer(void)
 			_putchar((minute / 10) + '0');
 			_putchar((minute % 10) + '0');
 			_putchar('\n');
+			minute++;
 		}
+		hour++;
 	}
 }
