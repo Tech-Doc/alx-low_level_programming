@@ -12,7 +12,7 @@ int main(void)
 	unsigned long num2 = 2;
 	unsigned long numx;
 
-	for (i = 0; i <= 97; i++)
+	for (i = 0; i <= 96; i++)
 	{
 		printf("%lu", num1);
 
@@ -20,7 +20,7 @@ int main(void)
 		num1 = num2;
 		num2 = numx;
 
-		if (i != 97)
+		if (i != 96)
 			printf(", ");
 	}
 
