@@ -6,26 +6,25 @@
  */
 int main(void)
 {
-	int counter = 2;
+	int i;
 
-	float a = 1;
-	float b = a + 1;
-	float c = a + b;
+	unsigned long num1 = 1;
+	unsigned long num2 = 2;
+	unsigned long numx;
 
-	printf("%.0f, ", a);
-	printf("%.0f, ", b);
-	while (counter < 98)
+	for (i = 0; i <= 97; i++)
 	{
-		counter++;
-		printf("%.0f", c);
-		a = b;
-		b = c;
-		c = a + b;
-		if (counter < 98)
-		{
+		printf("%lu", num1);
+
+		numx = num1 + num2;
+		num1 = num2;
+		num2 = numx;
+
+		if (i != 97)
 			printf(", ");
-		}
 	}
+
 	printf("\n");
+
 	return (0);
 }
