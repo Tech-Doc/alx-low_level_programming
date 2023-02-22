@@ -1,30 +1,28 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
  * jack_bauer -  function that prints every minute of the day
  * starting from 00:00 to 23:59
  * Description: Using neste while loops,
  * count up through every minute of the day and print
- * Return: Always 0 (success)
  */
 
 void jack_bauer(void)
 {
-	int hour = 0, minute;
+	int hour = 0, min;
 
 	while (hour < 24)
 	{
 		min = 0;
 		while (min < 60)
 		{
-			_putchar((minute / 10) + '0');
+			_putchar((min / 10) + '0');
 			_putchar((hour % 10) + '0');
 			_putchar(':');
-			_putchar((minute / 10) + '0');
-			_putchar((minute % 10) + '0');
+			_putchar((min / 10) + '0');
+			_putchar((min % 10) + '0');
 			_putchar('\n');
-			minute++;
+			min++;
 		}
 		hour++;
 	}
