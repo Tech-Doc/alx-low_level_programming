@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - main function
+ * main - print sum of even Fib nums>4mil
  *
- * Return: nothing
+ * Return: 0 on success
  */
 int main(void)
 {
