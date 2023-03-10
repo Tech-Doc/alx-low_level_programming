@@ -1,2 +1,0 @@
-mkdir .gitignore
-cp -r .c .o .gitignore
